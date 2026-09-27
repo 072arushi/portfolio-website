@@ -165,6 +165,9 @@
   .mini-card .badge{display:inline-block;font-family:var(--body);font-size:.68rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#fff;background:var(--c);padding:.3rem .72rem;border-radius:999px;margin-bottom:.85rem;}
   .mini-card h4{font-family:var(--display);font-weight:600;font-size:1.14rem;line-height:1.25;margin:0 0 .4rem;color:var(--ink);}
   .mini-card p{margin:0;color:var(--muted);font-size:.88rem;line-height:1.45;}
+  .mini-card{display:block;}
+  .mini-card .viewpost{display:inline-block;margin-top:.9rem;font-family:var(--body);font-size:.8rem;font-weight:600;color:var(--c);}
+  a.mini-card:hover .viewpost{text-decoration:underline;}
   .card-grid > .mini-card:nth-child(6n+1){--c:#7C3AED;--soft:#F1EBFE;}
   .card-grid > .mini-card:nth-child(6n+2){--c:#FB5E86;--soft:#FEECF1;}
   .card-grid > .mini-card:nth-child(6n+3){--c:#F5A524;--soft:#FEF4E1;}
@@ -357,8 +360,10 @@
   </div>
   <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
+      <span class="m-item">Nutanix</span><span class="m-dot">★</span>
       <span class="m-item">CNCF</span><span class="m-dot">★</span>
       <span class="m-item">The Linux Foundation</span><span class="m-dot">★</span>
+      <span class="m-item">Harness</span><span class="m-dot">★</span>
       <span class="m-item">PyDelhi</span><span class="m-dot">★</span>
       <span class="m-item">Major League Hacking</span><span class="m-dot">★</span>
       <span class="m-item">Google</span><span class="m-dot">★</span>
@@ -367,15 +372,18 @@
       <span class="m-item">Wiley</span><span class="m-dot">★</span>
       <span class="m-item">GSSoC</span><span class="m-dot">★</span>
       <span class="m-item">AWS</span><span class="m-dot">★</span>
-      <span class="m-item">GDG</span><span class="m-dot">★</span>
-      <span class="m-item">Microsoft</span><span class="m-dot">★</span>
-      <span class="m-item">AAIF</span><span class="m-dot">★</span>
-      <span class="m-item">Intel</span><span class="m-dot">★</span>
-      <span class="m-item">IGDTUW</span><span class="m-dot">★</span>
-      <span class="m-item">Adobe</span><span class="m-dot">★</span>
-      <span class="m-item">gRPC</span><span class="m-dot">★</span>
-      <span class="m-item">HTM</span><span class="m-dot">★</span>
-      <span class="m-item">Deepstation</span><span class="m-dot">★</span>
+      <span class="m-item">Nutanix</span><span class="m-dot">★</span>
+      <span class="m-item">CNCF</span><span class="m-dot">★</span>
+      <span class="m-item">The Linux Foundation</span><span class="m-dot">★</span>
+      <span class="m-item">Harness</span><span class="m-dot">★</span>
+      <span class="m-item">PyDelhi</span><span class="m-dot">★</span>
+      <span class="m-item">Major League Hacking</span><span class="m-dot">★</span>
+      <span class="m-item">Google</span><span class="m-dot">★</span>
+      <span class="m-item">IEEE</span><span class="m-dot">★</span>
+      <span class="m-item">Springer</span><span class="m-dot">★</span>
+      <span class="m-item">Wiley</span><span class="m-dot">★</span>
+      <span class="m-item">GSSoC</span><span class="m-dot">★</span>
+      <span class="m-item">AWS</span><span class="m-dot">★</span>
     </div>
   </div>
 </section>
@@ -420,18 +428,105 @@
   <div class="container">
     <p class="eyebrow reveal" data-code="§02"><span></span>&nbsp;Speaking</p>
     <h2 class="section-title reveal">Talks &amp; <span class="hl">speaking</span></h2>
-    <p class="section-lead reveal">Talks, sessions, and panels on MCP, agentic systems, and the developer mindset.</p>
+    <p class="section-lead reveal">Talks and panels on MCP, agentic systems, and the developer mindset — each links to its post.</p>
 
     <div class="card-grid reveal">
-      <div class="mini-card"><div class="badge">2026</div><h4>Where MCP Ends and A2A Begins</h4><p>MCP Dev Summit — Mumbai &amp; Bengaluru · CNCF</p></div>
-      <div class="mini-card"><div class="badge">2026</div><h4>Standardizing the Intelligence Layer: MCP on Kubernetes</h4><p>Harness · CNCF Meetup @ Nutanix · Cloud Native &amp; AI Day</p></div>
-      <div class="mini-card"><div class="badge">2026</div><h4>Engineers + AI: Why We Still Matter</h4><p>Dev Conclave · PyDelhi, Women's Day</p></div>
-      <div class="mini-card"><div class="badge">2026</div><h4>The Developer's Way of Thinking</h4><p>School of Computer &amp; Systems Science, JNU</p></div>
-      <div class="mini-card"><div class="badge">2025</div><h4>Powering Adobe's Advertising Analytics with gRPC Streaming</h4><p>gRPC Conf · Google</p></div>
-      <div class="mini-card"><div class="badge">2025</div><h4>Building the Developer Mindset</h4><p>DevSphere · GDG on Campus, IGDTUW</p></div>
-      <div class="mini-card"><div class="badge">2024</div><h4>TensorFlow Fiesta: Unleashing the Power of AI</h4><p>Bennett University</p></div>
-      <div class="mini-card"><div class="badge">2023</div><h4>Introduction to Research &amp; Papers</h4><p>PyDelhi (meetup &amp; conference) · DevFest Noida</p></div>
-      <div class="mini-card"><div class="badge">2025–26</div><h4>Panels — Humans vs AI &amp; more</h4><p>Kristu Jayanti College · AWS Cloud Captains Connect</p></div>
+      <a class="mini-card" href="https://lnkd.in/p/dg6kUf5u" target="_blank" rel="noopener">
+        <div class="badge">Talk</div>
+        <h4>Where MCP Ends and A2A Begins: Why That Seam Is Breaking Your Agents</h4>
+        <p>MCP Dev Summit, Mumbai · CNCF · 2026</p>
+        <span class="viewpost">View post ↗</span>
+      </a>
+      <a class="mini-card" href="https://lnkd.in/p/dfku8R9r" target="_blank" rel="noopener">
+        <div class="badge">Talk</div>
+        <h4>Where MCP Ends and A2A Begins: Why That Seam Is Breaking Your Agents</h4>
+        <p>MCP Dev Summit, Bengaluru · CNCF · 2026</p>
+        <span class="viewpost">View post ↗</span>
+      </a>
+      <a class="mini-card" href="https://lnkd.in/p/dzPdm25A" target="_blank" rel="noopener">
+        <div class="badge">Talk</div>
+        <h4>Engineers + AI: Why We Still Matter</h4>
+        <p>Dev Conclave, Bengaluru · 2026</p>
+        <span class="viewpost">View post ↗</span>
+      </a>
+      <a class="mini-card" href="https://lnkd.in/p/dHS6Yq6E" target="_blank" rel="noopener">
+        <div class="badge">Talk</div>
+        <h4>Standardizing the Intelligence Layer: MCP on Kubernetes</h4>
+        <p>Harness · Cloud Computing Circle · 2026</p>
+        <span class="viewpost">View post ↗</span>
+      </a>
+      <a class="mini-card" href="https://lnkd.in/p/dS8fQRnk" target="_blank" rel="noopener">
+        <div class="badge">Talk</div>
+        <h4>Standardizing the Intelligence Layer: MCP on Kubernetes</h4>
+        <p>CNCF Platform &amp; Resilience Engineering Meetup · Nutanix, Bengaluru · 2026</p>
+        <span class="viewpost">View post ↗</span>
+      </a>
+      <a class="mini-card" href="https://lnkd.in/p/d2xGU8eF" target="_blank" rel="noopener">
+        <div class="badge">Panel</div>
+        <h4>AWS Cloud Captains Monthly Connect</h4>
+        <p>Panel discussion · 2026</p>
+        <span class="viewpost">View post ↗</span>
+      </a>
+      <a class="mini-card" href="https://lnkd.in/p/dGTG8E9K" target="_blank" rel="noopener">
+        <div class="badge">Talk</div>
+        <h4>Engineers + AI: Why We Still Matter</h4>
+        <p>PyDelhi Meetup · EPAM Systems, Women's Day · 2026</p>
+        <span class="viewpost">View post ↗</span>
+      </a>
+      <a class="mini-card" href="https://lnkd.in/p/dqmCJ8Bp" target="_blank" rel="noopener">
+        <div class="badge">Talk</div>
+        <h4>The Developer's Way of Thinking</h4>
+        <p>School of Computer &amp; Systems Science, JNU · 2026</p>
+        <span class="viewpost">View post ↗</span>
+      </a>
+      <a class="mini-card" href="https://lnkd.in/p/di__rtgJ" target="_blank" rel="noopener">
+        <div class="badge">Talk</div>
+        <h4>Standardizing the Intelligence Layer: MCP on Kubernetes</h4>
+        <p>Cloud Native &amp; AI Day: Beyond Chatbots · 2026</p>
+        <span class="viewpost">View post ↗</span>
+      </a>
+      <a class="mini-card" href="https://lnkd.in/p/d8x7sTHF" target="_blank" rel="noopener">
+        <div class="badge">Talk</div>
+        <h4>Building the Developer Mindset</h4>
+        <p>DevSphere · GDG on Campus, IGDTUW · 2025</p>
+        <span class="viewpost">View post ↗</span>
+      </a>
+      <a class="mini-card" href="https://lnkd.in/p/dPDF55kT" target="_blank" rel="noopener">
+        <div class="badge">Talk</div>
+        <h4>Powering Adobe's Advertising Analytics with gRPC Streaming</h4>
+        <p>gRPC Conf · Google Ananta Office · 2025</p>
+        <span class="viewpost">View post ↗</span>
+      </a>
+      <a class="mini-card" href="https://lnkd.in/p/dMy38b-c" target="_blank" rel="noopener">
+        <div class="badge">Panel</div>
+        <h4>Humans vs AI</h4>
+        <p>Kristu Jayanti College, Bangalore · 2025</p>
+        <span class="viewpost">View post ↗</span>
+      </a>
+      <a class="mini-card" href="https://lnkd.in/p/dDKkmdd6" target="_blank" rel="noopener">
+        <div class="badge">Talk</div>
+        <h4>TensorFlow Fiesta: Unleashing the Power of AI</h4>
+        <p>Bennett University · 2024</p>
+        <span class="viewpost">View post ↗</span>
+      </a>
+      <a class="mini-card" href="https://lnkd.in/p/dZHiaRVY" target="_blank" rel="noopener">
+        <div class="badge">Talk</div>
+        <h4>Beginner's Journey to Research &amp; Research Papers</h4>
+        <p>DevFest Noida · GDG Noida · 2023</p>
+        <span class="viewpost">View post ↗</span>
+      </a>
+      <a class="mini-card" href="https://lnkd.in/p/dW9DMXzp" target="_blank" rel="noopener">
+        <div class="badge">Talk</div>
+        <h4>Introduction to the World of Research &amp; Research Papers</h4>
+        <p>PyDelhi Meetup · 2023</p>
+        <span class="viewpost">View post ↗</span>
+      </a>
+      <a class="mini-card" href="https://lnkd.in/p/drHkHzPy" target="_blank" rel="noopener">
+        <div class="badge">Talk</div>
+        <h4>Beginner's Guide to Research &amp; Research Paper</h4>
+        <p>PyDelhi Conference · 2023</p>
+        <span class="viewpost">View post ↗</span>
+      </a>
     </div>
   </div>
 </section>
@@ -443,27 +538,79 @@
   <div class="container">
     <p class="eyebrow reveal" data-code="§03"><span></span>&nbsp;Community</p>
     <h2 class="section-title reveal">Judging, mentoring &amp; <span class="hl">leadership</span></h2>
-    <p class="section-lead reveal">Judging hackathons, mentoring builders, and leading developer communities.</p>
+    <p class="section-lead reveal">Hackathons judged, builders mentored, and communities led.</p>
 
     <div class="reveal">
-      <p class="sub-title">Judging &amp; mentoring</p>
+      <p class="sub-title">Judging, mentoring &amp; hosting</p>
       <div class="card-grid">
-        <div class="mini-card"><div class="badge">2026</div><h4>Judge — Google India Hackathon</h4><p>DeepStation &amp; Ramaiah Institute of Technology</p></div>
-        <div class="mini-card"><div class="badge">2025</div><h4>Judge — Hack This Fall</h4><p>Powered by Major League Hacking (MLH)</p></div>
-        <div class="mini-card"><div class="badge">2024</div><h4>Judge — Bennett University</h4><p>School of Computer Science Engineering &amp; Technology</p></div>
-        <div class="mini-card"><div class="badge">2024</div><h4>Mentor — Hack The Mountains</h4><p>Hackathon</p></div>
-        <div class="mini-card"><div class="badge">2022–23</div><h4>Mentor — Intel AI4Youth / YUVAI</h4><p>Projects showcased to the President of India</p></div>
+      <a class="mini-card" href="https://lnkd.in/p/dWwMJ2n2" target="_blank" rel="noopener">
+        <div class="badge">Judge</div>
+        <h4>Google India Hackathon</h4>
+        <p>DeepStation &amp; Ramaiah Institute of Technology · 2026</p>
+        <span class="viewpost">View post ↗</span>
+      </a>
+      <a class="mini-card" href="https://lnkd.in/p/dX4PDHs5" target="_blank" rel="noopener">
+        <div class="badge">Judge</div>
+        <h4>Build Bengaluru Hackathon</h4>
+        <p>HackBriven · Microsoft Luxor North Tower, Bengaluru · 2026</p>
+        <span class="viewpost">View post ↗</span>
+      </a>
+      <a class="mini-card" href="https://lnkd.in/p/dX77-Sh9" target="_blank" rel="noopener">
+        <div class="badge">Judge</div>
+        <h4>Hack This Fall</h4>
+        <p>Powered by Major League Hacking (MLH) · 2025</p>
+        <span class="viewpost">View post ↗</span>
+      </a>
+      <a class="mini-card" href="https://lnkd.in/p/d-xGC8jW" target="_blank" rel="noopener">
+        <div class="badge">Judge</div>
+        <h4>Bennett University</h4>
+        <p>School of Computer Science Engineering &amp; Technology · 2024</p>
+        <span class="viewpost">View post ↗</span>
+      </a>
+      <a class="mini-card" href="https://lnkd.in/p/dnmCTPFf" target="_blank" rel="noopener">
+        <div class="badge">Mentor</div>
+        <h4>Hack The Mountains</h4>
+        <p>Hackathon · 2024</p>
+        <span class="viewpost">View post ↗</span>
+      </a>
+      <a class="mini-card" href="https://lnkd.in/p/dStxvvC8" target="_blank" rel="noopener">
+        <div class="badge">Mentor</div>
+        <h4>YUVAI · Intel AI4Youth</h4>
+        <p>Guided AI projects showcased to the President of India · 2023</p>
+        <span class="viewpost">View post ↗</span>
+      </a>
+      <a class="mini-card" href="https://lnkd.in/p/du8VEvMx" target="_blank" rel="noopener">
+        <div class="badge">Host</div>
+        <h4>AWS Student Community Day</h4>
+        <p>IGDTUW · 2024</p>
+        <span class="viewpost">View post ↗</span>
+      </a>
       </div>
     </div>
 
     <div class="reveal" style="margin-top:2.6rem;">
       <p class="sub-title">Community &amp; leadership</p>
       <div class="card-grid">
-        <div class="mini-card"><div class="badge">2024</div><h4>Program Manager — GSSoC '24</h4><p>GirlScript Summer of Code</p></div>
-        <div class="mini-card"><div class="badge">2023–24</div><h4>AWS Cloud Club Captain &amp; Founder</h4><p>IGDTUW · first 50 globally · 12+ sessions</p></div>
-        <div class="mini-card"><div class="badge">2024</div><h4>Organiser — AWS Student Community Day</h4><p>IGDTUW</p></div>
-        <div class="mini-card"><div class="badge">2022–23</div><h4>AI/ML/DL Circle Manager — Google DSC</h4><p>Google Developer Student Clubs, IGDTUW</p></div>
-        <div class="mini-card"><div class="badge">2026–present</div><h4>AAIF Ambassador</h4><p>Community advocate</p></div>
+      <div class="mini-card">
+        <div class="badge">2024</div>
+        <h4>Program Manager — GSSoC '24</h4>
+        <p>GirlScript Summer of Code</p>
+      </div>
+      <div class="mini-card">
+        <div class="badge">2023–24</div>
+        <h4>AWS Cloud Club Captain &amp; Founder</h4>
+        <p>IGDTUW · among the first 50 globally · 12+ sessions</p>
+      </div>
+      <div class="mini-card">
+        <div class="badge">2022–23</div>
+        <h4>AI/ML/DL Circle Manager — Google DSC</h4>
+        <p>Google Developer Student Clubs, IGDTUW</p>
+      </div>
+      <div class="mini-card">
+        <div class="badge">2026–present</div>
+        <h4>AAIF Ambassador</h4>
+        <p>Community advocate</p>
+      </div>
       </div>
     </div>
   </div>
